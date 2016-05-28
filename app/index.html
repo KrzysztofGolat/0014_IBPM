@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IBPM test</title>
+    <meta name="author" content="Krzysztof Golat">
+    <meta name="description" content="Zadanie dla IBPM">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    
+    <script>
+        function initialize() {
+          var mapProp = {
+            center:new google.maps.LatLng(54.3620065,18.5875846),
+            zoom:11,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+</head>
+<body>
+    
+    <main>
+
+        <div id="googleMap" style="width:500px;height:380px;"></div>
+    
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    
+</body>    
+</html>
